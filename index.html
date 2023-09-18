@@ -15,8 +15,8 @@
 <body>
 
     <!-- Start Navbar -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
+    <div class="container">
+        <nav class="navbar">
             <a class="navbar-brand" href="./index.html">Salt & Vine</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -37,38 +37,45 @@
                             <a class="nav-link" href="./html/team.html">team</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href=".html/our_resturant.html">our restaurant</a>
+                            <a class="nav-link" href="./html/our_resturant.html">our restaurant</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">events</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./html/faqs.html"">frequently asked</a>
+                            <a class="nav-link" href="./html/faqs.html">frequently asked</a>
                         </li>
                     </ul>
-                    <div class="d-grid mt-5 g-5 justify-content-center">
+                    <div class=" d-grid mt-5 g-5 justify-content-center">
                         <div>
                             <i class="bi bi-instagram"></i>
                             <i class="bi bi-facebook"></i>
                             <i class="bi bi-threads"></i>
                         </div>
                     </div>
-                </div> <!--  end nav body -->
+                </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- end navbar -->
-    <div class="container">
-        <img class="w-100" src="./images/food_p.jpg">
-        <a class="btn" href="./team.html">Find Seating</button>
+        </nav> <!--  end nav body -->
     </div>
 
-    <div class="fixed-bottom bg-light">
-        <p class="text-center">
-                123 Main Street, Seattle, Washington.
-        </p>
+    <!-- end navbar -->
+
+    <!-- CONTAINER FOR MOBILE DEVICES -->
+    <div class="container">
+        <div class="relative">
+            <img class="img-fill img-fluid" src="./images/food_p.jpg">
+            <a class="btn" href="./html/our_resturant.html">Find Seating</a>
+        </div>
+
+        <div class="fixed-bottom bg-light">
+            <p class="text-bio text-small-cap text-center my-auto py-1">
+                <small>
+                    123 Main Street, Seattle, Washington.
+                </small>
+            </p>
+        </div>
     </div>
 
 </body>
+
 </html>

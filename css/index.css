@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@300;400&family=Roboto:wght@400;700&family=Space+Mono&display=swap");
 
-* { 
+* {
     font-family: "Raleway", sans-serif;
+    margin: 0;
 }
 
 .name {
@@ -23,13 +24,18 @@
     font-size: small;
 }
 
+.text-small-cap {
+    font-size: x-small;
+    text-transform: uppercase;
+}
+
 .text-title {
     text-transform: capitalize;
     font-style: italic;
     font-size: small;
 }
 
-.text-bio { 
+.text-bio {
     letter-spacing: 0.7px;
     line-height: 1.5rem;
 }
@@ -50,16 +56,14 @@
 /* for placing button over an image */
 
 /* Container needed to position the button. Adjust the width as needed */
-.img-container {
-    position: relative;
-}
 
 /* Make the image responsive */
 
 /* Style the button and place it in the middle of the container/image */
-.container .btn {
+
+.relative .btn {
     position: absolute;
-    top: 80%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -72,13 +76,7 @@
     border-radius: 5px;
 }
 
-.bar-email { 
-    background-color: #f9f7f4;
-    font-style: italic;
-    padding: 0px;
-}
-
-.bar-email a { 
-    text-decoration: none;
-    color: #3c3c3c
+.img-fill {
+    height: 100vh;
+    object-fit: cover;
 }
