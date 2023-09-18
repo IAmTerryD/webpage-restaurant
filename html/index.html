@@ -2,194 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Restaurant</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
-
-        /* removes border from toggler */
-        .navbar-toggler:focus,
-        .navbar-toggler-icon:focus {
-            outline: none;
-            box-shadow: none;
-        }
-
-        .roboto {
-            font-family: 'Roboto', sans-serif;
-            line-height: 2rem;
-            letter-spacing: .01rem;
-        }
-
-        .text-headers {
-            font-size: xx-large;
-        }
-
-        .py_50 {
-            padding: 50px 0;
-        }
-    </style>
-
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Salt & Vine</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<div class="container-xxl">
-    <!-- Webpage container -->
+<body>
 
-    <body>
-        <!-- start navbar -->
-        <nav class="navbar navbar-light">
-
-            <!-- container only applies to navbar -->
-            <a class="navbar-brand" href="#">
-                <!-- navbar brand applies styles to links -->
-                <!-- will automatically be placed on the left -->
-                <span class="text-muted display-6">
-                    Salt & Vine
-                </span>
-            </a>
-
-            <!-- Button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon" />
+    <!-- Start Navbar -->
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Salt & Vine</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Salt & Vine</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div> <!-- end nav header -->
 
-            <!-- Menus -->
-            <div class="navbar-collapse collapse" id="menu">
-                <!-- navbar-collapse is a style for the list -->
-                <!-- collapse makes the menu items hidden by default-->
-                <ul class="navbar-nav">
-                    <!-- navbar-nav is a style for unordered list -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Restaurant</a>
-                        <!-- nav-link is a style -->
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reservations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Events & Private Dining</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Frequently Asked</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Gifts</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End Navbar  -->
-
-        <!-- Start Main  -->
-        <section id="main">
-
-            <!-- Start Carousel  -->
-            <div id="homeCarousel" class="carousel slide home-carousel" data-bs-ride="carousel">
-
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1"></button>
-                    <button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item">
-                        <img src="..\images\carousel_img_1.jpg" class="d-block w-100" alt="...">
-                        <!-- images must be the same aspect ratio and pixels -->
+                <div class="offcanvas-body nav-text">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team.html">team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./our_resturant.html">our restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">frequently asked</a>
+                        </li>
+                    </ul>
+                    <div class="d-grid mt-5 g-5 justify-content-center">
+                        <div>
+                            <i class="bi bi-instagram"></i>
+                            <i class="bi bi-facebook"></i>
+                            <i class="bi bi-threads"></i>
+                        </div>
                     </div>
-
-                    <div class="carousel-item">
-                        <img src="..\images\carousel_img_2.jpg" class="d-block w-100" alt="...">
-                    </div>
-
-                    <div class="carousel-item active">
-                        <!-- images must be the same aspect ratio and pixels -->
-                        <img src="..\images\carousel_img_3.jpg" class="d-block img-fit-contain w-100" alt="...">
-                    </div>
-                </div>
+                </div> <!--  end nav body -->
             </div>
-            <!-- End Carousel -->
-        
+        </div>
+    </nav>
 
-            <!-- Start Mobile Section Only -->
-            <div class="container d-sm-block d-md-none">
+    <!-- end navbar -->
+    <div class="container">
+        <img class="w-100" src="../images/food_p.jpg" alt="Snow">
+        <a class="btn" href="./team.html">Find Seating</button>
+    </div>
 
-                <!-- Resturant -->
+    <div class="fixed-bottom bg-light">
+        <p class="text-center em">
+            <small>
+                <em>
+                    Email Signup
+                </em>
+            </small>
+        </p>
 
-                <!-- Reserve Seating Button -->
-                <div class="row justify-content-center align-items-center">
-                    <a href="#" class="col-8 btn btn-outline-secondary my-3">Reserve Seating</a>
-                </div>
-
-                <!-- Our Restaurant -->
-                <div>
-                    <p class="text-muted text-center text-headers">
-                        Our Restaurant</p>
-                </div>
-
-
-                <div class="fixed-bottom">
-
-                </div>
-            </div>
-            <!-- End Mobile Section Only -->
-        </section>
-        <!-- End Main -->
+    </div>
+    </div>
 
 
-        <!-- Desktop Section Only -->
-        <section class="d-none d-md-block">
-            <div id="#about">
-                <div>
-                    <p class="display-6 text-muted text-center pt-5 pb-3 text-headers">
-                        Our Restaurant</p>
-
-                    <p class="text-muted text-center px-5">
-                        We embarked on the journey of creating an elegant Italian restaurant that captures the
-                        essence
-                        of Italy's rich culinary heritage.
-
-                        Our vision was to transport diners to the heart of Italy, where every dish is a work of art,
-                        and
-                        every meal is a celebration of flavors. We meticulously
-                        curated a menu that showcases the finest ingredients, from hand-picked olive oils to
-                        artisanal
-                        cheeses, and paired them with an extensive wine list featuring exquisite Italian vintages.
-
-                    <div class="d-none d-md-inline">
-                        <!-- This block only shows on medium screens -->
-                        <p class="text-muted text-center px-5">
-                            The restaurant's design is a blend of modern sophistication and classic Italian charm,
-                            with
-                            warm earthy tones, soft lighting, and rustic accents that invite guests to savor each
-                            moment.
-                            Our
-                            mission is to offer a truly immersive Italian dining experience, where every visit feels
-                            like a
-                            journey
-                            through Italy's culinary traditions, all within the refined ambiance of our
-                            establishment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Boot JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-            crossorigin="anonymous"></script>
-
-    </body>
-</div> <!-- webpage container  -->
+</body>
 
 </html>

@@ -1,85 +1,73 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Mono:wght@300;400&family=Roboto:wght@400;700&family=Space+Mono&display=swap");
 
-h2 {
+* { 
     font-family: "Raleway", sans-serif;
-    text-transform: capitalize;
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-    letter-spacing: 0.1px;
-    margin-bottom: 10px;
-}
-
-em {
-    color: #ee8085;
 }
 
 .name {
-    font-family: "Raleway", sans-serif;
-    font-size: xx-small;
+    font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    font-weight:400;
+    font-weight: 400;
 }
 
 .title {
-    font-family: "Raleway", sans-serif;
-    font-size: xx-small;
+    font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
-.profile-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 33%;
-    margin: 60px 30px;
-}
-
-.picture {
-    display: flex;
-    justify-content: center;
-}
-
-.profile-container img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.author-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0px;
-}
-
-.member-title {
+.text-name {
+    font-family: 400;
     text-transform: capitalize;
-    text-align: center;
-    font-size: 33px;
-    font-weight: 700;
-    margin: 20px 0px;
+    font-size: small;
 }
 
-.member-title {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 13px;
-    color: #aa9ace;
-    font-weight: 500;
-    letter-spacing: 1px;
+.text-title {
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: small;
 }
 
-.biography {
-    width: 85%;
-    margin-top: 20px;
-    font-size: 14px;
+.text-bio { 
     letter-spacing: 0.7px;
     line-height: 1.5rem;
+}
+
+.nav-text {
+    font-size: large;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+/* removes border from toggler */
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+/* for placing button over an image */
+
+/* Container needed to position the button. Adjust the width as needed */
+.img-container {
+    position: relative;
+}
+
+/* Make the image responsive */
+
+/* Style the button and place it in the middle of the container/image */
+.container .btn {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #5959594e;
+    color: white;
+    font-size: 1rem;
+    padding: 12px 24px;
+    border: 2px solid white;
+    cursor: pointer;
+    border-radius: 5px;
 }
