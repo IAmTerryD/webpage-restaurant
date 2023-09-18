@@ -71,3 +71,14 @@
     cursor: pointer;
     border-radius: 5px;
 }
+
+.bar-email { 
+    background-color: #f9f7f4;
+    font-style: italic;
+    padding: 0px;
+}
+
+.bar-email a { 
+    text-decoration: none;
+    color: #3c3c3c
+}
