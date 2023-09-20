@@ -59,19 +59,35 @@
     </div>
 
     <!-- end navbar -->
+    
+        <!-- CONTAINER FOR MOBILE DEVICES -->
 
-    <!-- CONTAINER FOR MOBILE DEVICES -->
-    <div class="container">
+        <div class="container d-md-none">
+            <div class="relative">
+                <img class="img-fit-vh img-fluid" src="./images/food_p.jpg">
+                <a class="btn" href="./html/our_resturant.html">Find Seating</a>
+            </div>
+    
+            <div class="fixed-bottom bg-light">
+                <p class="text-bio text-small-cap text-center my-auto py-1">
+                    <small>
+                        123 Main Street, Seattle, Washington.
+                    </small>
+                </p>
+            </div>
+        </div>
+
+    <!-- CONTAINER FOR MEDIUM SCREENS -->
+
+    <div class="container d-none d-md-block">
         <div class="relative">
-            <img class="img-fill img-fluid" src="./images/food_p.jpg">
+            <img class="img-fluid" src="./images/food_p.jpg">
             <a class="btn" href="./html/our_resturant.html">Find Seating</a>
         </div>
 
         <div class="fixed-bottom bg-light">
-            <p class="text-bio text-small-cap text-center my-auto py-1">
-                <small>
+            <p class="text-x-small-upper text-center my-auto py-1">
                     123 Main Street, Seattle, Washington.
-                </small>
             </p>
         </div>
     </div>
@@ -79,3 +95,24 @@
 </body>
 
 </html>
+
+<!-- 
+    Dev Notes: 1.01
+
+    Fix desktop width of image: 
+    - Problem:
+        -   Mobile image is at 100% vh with custom CSS img-fit-vh.
+        -   This prevents expansion of width on larger screens.
+    
+    - Solution:
+        -   Create two containers:
+            - Small container for mobile with img-fit-vh class.
+                - <div class="d-md-none container">
+            - Medium to xxl containers without img-fit-vh class.   
+ -->
+
+ <!-- 
+    Learning Notes:
+    -   To center text in a container vertically with bootstrap, use my-auto.
+
+-->

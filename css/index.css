@@ -5,42 +5,80 @@
     margin: 0;
 }
 
-.name {
+.text-header-sm-400-spaced {
+    /* .name */
     font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
     font-weight: 400;
 }
 
-.title {
+.text-header-sm-spaced {
+    /* title */
     font-size: small;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
-.text-name {
-    font-family: 400;
+.text-header-sm-400 {
+    /* .name */
+    font-size: small;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.text-header-sm-600 {
+    /* .name */
+    font-size: small;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.text-header-sm-cap-spaced {
+    /* text-name */
+    font-size: small;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.text-header-sm-italic {
+    font-size: small;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.text-header-sm {
+    /* d */
     text-transform: capitalize;
     font-size: small;
 }
 
-.text-small-cap {
+
+.text-x-small-upper {
+    /* d */
     font-size: x-small;
     text-transform: uppercase;
 }
 
-.text-title {
-    text-transform: capitalize;
-    font-style: italic;
+.text-body-sm-700 {
+    font-size: small;
+    font-weight: 700;
+}
+
+.text-body-sm {
     font-size: small;
 }
 
-.text-bio {
+.text-body-med-spaced {
+    /* .text-bio */
+    font-size: medium;
     letter-spacing: 0.7px;
     line-height: 1.5rem;
 }
 
-.nav-text {
+.nav-link {
     font-size: large;
     letter-spacing: .2rem;
     text-transform: uppercase;
@@ -76,7 +114,7 @@
     border-radius: 5px;
 }
 
-.img-fill {
+.img-fit-vh {
     height: 100vh;
     object-fit: cover;
 }

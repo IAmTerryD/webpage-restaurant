@@ -1,0 +1,8 @@
+Patch 1.01
+- Fixed viewing containers.
+    - Image width did not expand when resizing window. 
+    - Fixed containers of support pages. Were not scaling correctly on desktop devices. 
+
+- Improved CSS naming conventions for reusability. 
+
+- Added FAQ webpage.

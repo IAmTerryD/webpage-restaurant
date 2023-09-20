@@ -8,89 +8,132 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <!-- <link rel="stylesheet" href="../css/index.css" /> -->
+  <link rel="stylesheet" href="../css/index.css" />
   <title>Salt & Vine</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-  <!-- Start Navbar -->
-  <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="../index.html">Salt & Vine</a>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Start Navbar Container -->
+  <div class="container">
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">Salt & Vine</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Salt & Vine</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div> <!-- end nav header -->
 
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Salt & Vine</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-
-        <div class="offcanvas-body nav-text">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item">
-              <a class="nav-link" href="#">reservations</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./team.html">team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./our_resturant.html">our restaurant</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">events</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">frequently asked</a>
-            </li>
-          </ul>
-          <div class="d-grid mt-5 g-5 justify-content-center">
-            <div>
-              <i class="bi bi-instagram"></i>
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-threads"></i>
+          <div class="offcanvas-body nav-text">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#">reservations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./team.html">team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./our_resturant.html">our restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faqs.html">frequently asked</a>
+              </li>
+            </ul>
+            <div class="d-grid mt-5 g-5 justify-content-center">
+              <div>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-threads"></i>
+              </div>
             </div>
-          </div>
-        </div> <!--  end nav body -->
+          </div> <!--  end nav body -->
+        </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  </div>
   <!-- end navbar -->
 
-  <div class="container">
-    <div class="my-5 text-bio text-muted text-center">
-      <p class="pb-3">
-        We embarked on the journey of creating an elegant Italian restaurant that captures the
-        essence
-        of Italy's rich culinary heritage.
 
-        Our vision was to transport diners to the heart of Italy, where every dish is a work of art,
+  <div class="container text-muted text-center my-5">
+    <p class="pb-3 text-header-sm-600">
+      Frequently Asked Questions
+    </p>
+
+    <div class="my-2">
+      <p class="text-body-sm-700">
+        Where is the restaurant located?
+      </p>
+      <p class="text-body-sm">
+        We are located at 11 Madison Avenue, on the corner of East 24th Street and Madison Avenue, directly across the
+        street from Madison Square Park.
+      </p>
+    </div>
+
+    <div class="my-2">
+      <p class="text-body-sm-700">
+        What type of menu does the restaurant offer?
+      </p>
+      <p class="text-body-sm">
+        We offer three menus, all of which are 100% plant-based. Our main dining room tasting menu is nine to ten
+        courses for $365 per guest, traditionally lasting two and a half to three hours, featuring both plated and
+        communal
+        dishes. The 6-course menu is $285 per guest. Featuring highlights from the Full Tasting menu along with
+        tableside
+        preparations, lasting roughly two hours. Served in our lounge, we offer a Bar Tasting menu for $195 per guest
+        that
+        consists of four to five courses, commonly lasting one and a half to two hours.
+      </p>
+    </div>
+
+    <div class="my-2">
+      <p class="text-body-sm-700">
+        What are your Covid-19 precautions and requirements?
+      </p>
+
+      <p class="text-body-sm">
+        Our guest and staff safety is our top priority. We are no longer asking guests and staff to wear masks indoors
         and
-        every meal is a celebration of flavors. We meticulously
-        curated a menu that showcases the finest ingredients, from hand-picked olive oils to
-        artisanal
-        cheeses, and paired them with an extensive wine list featuring exquisite Italian vintages.
+        are no longer checking vaccination cards at the door. Our dining room does have high ceilings, and we have
+        installed a new air filtration system to increase air circulation for our guests. If you have specific concerns
+        or
+        questions, please contact our Guest Relations team at info@restaurant.com.
 
-      <p>
-        The restaurant's design is a blend of modern sophistication and classic Italian charm,
-        with
-        warm earthy tones, soft lighting, and rustic accents that invite guests to savor each
-        moment.
-        Our
-        mission is to offer a truly immersive Italian dining experience, where every visit feels
-        like a
-        journey
-        through Italy's culinary traditions, all within the refined ambiance of our
-        establishment.
+      </p>
+    </div>
+
+    <div class="my-2">
+      <p class="text-body-sm-700">
+        Do you require proof of vaccination?
+      </p>
+
+      <p class="text-body-sm">
+        Currently, Eleven Madison Park does not require proof of vaccination. Our policy will remain dynamic to keep in
+        line with CDC recommendations and NYC mandates.
+      </p>
+    </div>
+
+    <div class="my-2">
+      <p class="text-body-sm-700">
+        How far in advance can I make a reservation?
+      </p>
+
+      <p class="text-body-sm">
+        We open up reservations on the first of every month for the following month - for example, on October 1st, all
+        of
+        November will be made available. If you find that the reservation you were hoping for is booked, we do hold a
+        waitlist and encourage you to add your name to it, and if something does become available, we will be in touch.
       </p>
     </div>
   </div>
-  </div>
+
 </body>
 
 </html>
