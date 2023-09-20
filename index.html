@@ -13,7 +13,6 @@
 </head>
 
 <body>
-
     <!-- Start Navbar -->
     <div class="container">
         <nav class="navbar">
@@ -59,38 +58,65 @@
     </div>
 
     <!-- end navbar -->
-    
-        <!-- CONTAINER FOR MOBILE DEVICES -->
 
-        <div class="container d-md-none">
-            <div class="relative">
-                <img class="img-fit-vh img-fluid" src="./images/food_p.jpg">
-                <a class="btn" href="./html/our_resturant.html">Find Seating</a>
-            </div>
-    
-            <div class="fixed-bottom bg-light">
-                <p class="text-bio text-small-cap text-center my-auto py-1">
-                    <small>
-                        123 Main Street, Seattle, Washington.
-                    </small>
-                </p>
-            </div>
+    <!-- CONTAINER FOR MOBILE DEVICES -->
+    <div class="container d-md-none">
+        <div class="relative">
+            <img class="img-fit-vh img-fluid" src="./images/food_p.jpg">
+            <!-- <a class="btn" id="find-seating-btn" href="./html/our_resturant.html">Find Seating</a> -->
+            <a type="button" class="btn btn-style-dark-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Find Seating
+            </a>
+
         </div>
+
+        <div class="fixed-bottom bg-light">
+            <p class="text-bio text-small-cap text-center my-auto py-1">
+                <small>
+                    123 Main Street, Seattle, Washington.
+                </small>
+            </p>
+        </div>
+    </div>
 
     <!-- CONTAINER FOR MEDIUM SCREENS -->
 
     <div class="container d-none d-md-block">
         <div class="relative">
             <img class="img-fluid" src="./images/food_p.jpg">
-            <a class="btn" href="./html/our_resturant.html">Find Seating</a>
+            <a type="button" class="btn btn-style-dark-1" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Find Seating
+            </a>
         </div>
 
         <div class="fixed-bottom bg-light">
             <p class="text-x-small-upper text-center my-auto py-1">
-                    123 Main Street, Seattle, Washington.
+                123 Main Street, Seattle, Washington.
             </p>
         </div>
     </div>
+
+    <!-- Modal Script -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Find Seating</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    We are now managing reservations through Resy.<br>
+                    Proceeding will redirect you to outside page.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Go Back</button>
+                    <a type="button" class="btn btn-success" href="https://resy.com/">Continue to Resy</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- End Modal Script -->
 
 </body>
 
@@ -111,7 +137,7 @@
             - Medium to xxl containers without img-fit-vh class.   
  -->
 
- <!-- 
+<!-- 
     Learning Notes:
     -   To center text in a container vertically with bootstrap, use my-auto.
 

@@ -6,3 +6,9 @@ Patch 1.01
 - Improved CSS naming conventions for reusability. 
 
 - Added FAQ webpage.
+
+- Find Seating Button
+    - Opens a module to continue to Resy.
+    - Redirect to Resy.
+
+- Added module to Home 'Find Seating' button. 
