@@ -4,6 +4,7 @@ Patch 1.01
     - Fixed containers of support pages. Were not scaling correctly on desktop devices. 
 - Improved CSS naming conventions for reusability. 
 - Added FAQ webpage.
+- Removed Reserve menu link. 
 - Find Seating Button
     - Opens a module to continue to Resy.
     - Redirect to Resy.
